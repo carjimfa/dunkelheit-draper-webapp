@@ -15,11 +15,10 @@ body { margin: 0; font-family: 'Helvetica Neue', sans-serif; background-color: $
     grid-template-columns: 1fr;
 }
 
-.dd-typography {
-    .mat-typography {
-        .mat-display-1 {
-            font-family: 'lust-didone';
-            color: #F9BCBF;
-        }
+.dd-typography.mat-typography {
+    .mat-display-1 {
+        font-family: 'lust-didone';
+        color: #F9BCBF;
     }
 }
+
