@@ -1,4 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import 'https://use.typekit.net/wni5vbi.css';
+
+$accent: #F9BCBF;
+$background: #3B625C;
+
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: 'Helvetica Neue', sans-serif; background-color: $background;}
+
+.wrapper {
+    margin: 64px auto;
+    max-width: 920px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.dd-typography {
+    .mat-typography {
+        .mat-display-1 {
+            font-family: 'lust-didone';
+            color: #F9BCBF;
+        }
+    }
+}
