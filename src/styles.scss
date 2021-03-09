@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import 'https://use.typekit.net/wni5vbi.css';
+@import '~@angular/material/theming';
 
 $accent: #F9BCBF;
 $background: #3B625C;
@@ -16,9 +17,9 @@ body { margin: 0; font-family: 'Helvetica Neue', sans-serif; background-color: $
 }
 
 .dd-typography.mat-typography {
+    color: $accent;
     .mat-display-1 {
         font-family: 'lust-didone';
-        color: #F9BCBF;
     }
 }
 
