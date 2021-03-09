@@ -11,7 +11,7 @@ body { margin: 0; font-family: 'Helvetica Neue', sans-serif; background-color: $
 
 .wrapper {
     margin: 64px auto;
-    max-width: 920px;
+    max-width: 720px;
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -20,6 +20,13 @@ body { margin: 0; font-family: 'Helvetica Neue', sans-serif; background-color: $
     color: $accent;
     .mat-display-1 {
         font-family: 'lust-didone';
+    }
+}
+
+.mat-toolbar.main {
+    background-color: transparent;
+    img {
+        margin: auto;
     }
 }
 
