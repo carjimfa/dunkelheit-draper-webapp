@@ -16,6 +16,12 @@ body { margin: 0; font-family: 'Helvetica Neue', sans-serif; background-color: $
     grid-template-columns: 1fr;
 }
 
+//TODO: Remove when enough content in home
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
 .dd-typography.mat-typography {
     color: $accent;
     .mat-display-1 {
