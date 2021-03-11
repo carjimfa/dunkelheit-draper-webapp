@@ -21,6 +21,22 @@ body { margin: 0; font-family: 'Helvetica Neue', sans-serif; background-color: $
     .mat-display-1 {
         font-family: 'lust-didone';
     }
+
+    .mat-h3, .mat-subheading-2,
+    .mat-h4, .mat-subheading-1,
+    .mat-body, .mat-body-1,
+    .mat-body-strong, .mat-body-2,
+    .mat-small, .mat-caption {
+        a, a:visited, a:active {
+            font-weight: bold;
+            text-decoration: underline;
+            color: $accent;
+        }
+    
+        a:hover {
+            text-decoration: none;
+        }
+    }
 }
 
 .mat-toolbar.main {
@@ -28,8 +44,13 @@ body { margin: 0; font-family: 'Helvetica Neue', sans-serif; background-color: $
     img {
         margin: auto;
     }
-    a {
+    a, a:visited, a:active {
+        font-family: 'lust-didone';
         text-decoration: none;
+        color: $accent;
+    }
+    a:hover {
+        text-decoration: underline;
     }
 }
 
