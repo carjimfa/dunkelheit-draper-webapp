@@ -18,13 +18,13 @@ body { margin: 0; font-family: 'Helvetica Neue', sans-serif; background-color: $
 
 //TODO: Remove when enough content in home
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
 }
 
 .dd-typography.mat-typography {
     color: $accent;
-    .mat-display-1 {
+    h1, .mat-display-1 {
         font-family: 'lust-didone';
     }
 
@@ -38,7 +38,7 @@ footer {
             text-decoration: underline;
             color: $accent;
         }
-    
+
         a:hover {
             text-decoration: none;
         }

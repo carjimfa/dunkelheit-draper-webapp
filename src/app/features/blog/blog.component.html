@@ -1,0 +1,17 @@
+<app-toolbar></app-toolbar>
+<div class="wrapper home mat-typography dd-typography">
+  <ng-container *ngIf="!!rss">
+    <h1 class="mat-display-1">Dunkelheit & Draper habla de...</h1>
+    <mat-card *ngFor="let item of rss.items">
+      <mat-card-header>
+        <mat-card-title>{{item.title}}</mat-card-title>
+        <mat-card-subtitle>{{item.creator}}</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+  </ng-container>
+</div>
+<footer>
+  <mat-toolbar class="main mat-typography dd-typography">
+    <p class="mat-body">Dunkelheit & Draper, {{year}}</p>
+  </mat-toolbar>
+</footer>
