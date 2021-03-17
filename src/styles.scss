@@ -45,7 +45,8 @@ footer {
 
 .dd-typography.mat-typography {
     color: $foreground;
-    h1, .mat-display-1 {
+    h1, .mat-display-1,
+    h2, .mat-title {
         font-family: 'lust-didone';
     }
 
@@ -66,17 +67,29 @@ footer {
     }
 }
 
+a, a:visited, a:active {
+  text-decoration: none;
+  color: $foreground;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .mat-toolbar.main {
   margin-top: 16px;
   background-color: transparent;
+
   a.logo {
       margin: auto;
   }
+
   a, a:visited, a:active {
       font-family: 'lust-didone';
       text-decoration: none;
       color: $foreground;
   }
+
   a:hover {
       text-decoration: underline;
   }
