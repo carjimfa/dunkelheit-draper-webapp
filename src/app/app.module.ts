@@ -9,6 +9,7 @@ import { MatCardModule } from '@angular/material/card';
 import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BlogComponent } from './features/blog/blog.component';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { BlogComponent } from './features/blog/blog.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatCardModule,
+    MatProgressSpinnerModule,
     SharedModule,
     HttpClientModule
   ],

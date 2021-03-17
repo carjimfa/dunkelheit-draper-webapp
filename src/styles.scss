@@ -1,19 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import 'https://use.typekit.net/wni5vbi.css';
-@import '~@angular/material/theming';
 
-$accent: #F9BCBF;
+$foreground: #F9BCBF;
 $background: #3B625C;
 
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Helvetica Neue', sans-serif; background-color: $background;}
 
 .wrapper {
-    margin: 64px auto;
+    margin: 32px auto;
+    padding: 16px;
     max-width: 720px;
     display: grid;
     grid-template-columns: 1fr;
+}
+
+.avatar-kalte {
+  background-image: url('./assets/kalte.jpeg');
+  background-size: cover;
+}
+
+.avatar-carlos {
+  background-image: url('./assets/carlos.png');
+  background-size: cover;
+}
+
+.wrapper-2-column {
+  margin: 64px auto;
+  max-width: 720px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 //TODO: Remove when enough content in home
@@ -22,8 +39,12 @@ footer {
     bottom: 0;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .dd-typography.mat-typography {
-    color: $accent;
+    color: $foreground;
     h1, .mat-display-1 {
         font-family: 'lust-didone';
     }
@@ -36,7 +57,7 @@ footer {
         a, a:visited, a:active {
             font-weight: bold;
             text-decoration: underline;
-            color: $accent;
+            color: $foreground;
         }
 
         a:hover {
@@ -46,17 +67,18 @@ footer {
 }
 
 .mat-toolbar.main {
-    background-color: transparent;
-    img {
-        margin: auto;
-    }
-    a, a:visited, a:active {
-        font-family: 'lust-didone';
-        text-decoration: none;
-        color: $accent;
-    }
-    a:hover {
-        text-decoration: underline;
-    }
+  margin-top: 16px;
+  background-color: transparent;
+  a.logo {
+      margin: auto;
+  }
+  a, a:visited, a:active {
+      font-family: 'lust-didone';
+      text-decoration: none;
+      color: $foreground;
+  }
+  a:hover {
+      text-decoration: underline;
+  }
 }
 

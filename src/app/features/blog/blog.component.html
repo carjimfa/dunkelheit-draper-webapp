@@ -1,9 +1,14 @@
 <app-toolbar></app-toolbar>
 <div class="wrapper home mat-typography dd-typography">
+  <h1 class="mat-display-1 text-center">Dunkelheit & Draper habla de...</h1>
+  <div *ngIf="spanishArticles.length === 0" style="display: grid; align-items: center; justify-items: center">
+    <mat-spinner class="text-center" [color]="'accent'"></mat-spinner>
+  </div>
   <ng-container *ngIf="!!rss">
-    <h1 class="mat-display-1">Dunkelheit & Draper habla de...</h1>
-    <mat-card *ngFor="let item of rss.items">
+    <mat-card *ngFor="let item of spanishArticles">
       <mat-card-header>
+        <div *ngIf="item.creator === 'Carlos Draper Giggs'" mat-card-avatar class="avatar-carlos"></div>
+        <div *ngIf="item.creator === 'Kalte Dunkelheit'" mat-card-avatar class="avatar-kalte"></div>
         <mat-card-title>{{item.title}}</mat-card-title>
         <mat-card-subtitle>{{item.creator}}</mat-card-subtitle>
       </mat-card-header>

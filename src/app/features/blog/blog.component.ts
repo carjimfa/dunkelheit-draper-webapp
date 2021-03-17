@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import {RssResponse} from './rss-response';
 import {plainToClass} from 'class-transformer';
+import {RssItem} from './rss-item';
 
 @Component({
   selector: 'app-blog',
@@ -20,5 +21,13 @@ export class BlogComponent implements OnInit {
 
   get year(): string {
     return (new Date(Date.now())).getFullYear().toString();
+  }
+
+  get spanishArticles(): Array<RssItem> {
+    if (this.rss && this.rss.items) {
+      return this.rss.items.filter((t) => !t.categories.includes('english'));
+    }
+
+    return [];
   }
 }
