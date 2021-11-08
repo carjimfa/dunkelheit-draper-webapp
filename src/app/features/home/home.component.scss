@@ -1,8 +1,17 @@
 .home {
-    padding: 0 32px;
+    padding: 32px;
     &__title {
+        padding: 64px 0 0 0;
         h1 {
             text-align: center;
         }
+    }
+
+    &__title:first-child {
+        padding-top: 0;
+    }
+
+    &__content {
+        padding: 0 0 64px 0;
     }
 }
